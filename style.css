@@ -1,6 +1,12 @@
 body{
     font-family: "Poppins",sans-serif;
+    background-color: rgb(220, 209, 201);
 }
+
+.navbar{
+    background-color: rgb(181, 141, 112);
+}
+
 table{
     border-collapse: collapse;
     margin: auto;
@@ -11,7 +17,7 @@ td{
     width: 75px;
     text-align: center;
     vertical-align: middle;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 td:hover{
@@ -19,18 +25,18 @@ td:hover{
 }
 
 .playing{
-    border-bottom: 2px solid brown;
+    border-bottom: 2px solid rgb(181, 141, 112);
 }
 
 button{
     border-radius: 5px;
-    border: 2px solid brown;
+    border: 2px solid rgb(181, 141, 112);
     background-color: transparent;
     transition-duration: 0.1s;
     cursor: hand;
 }
 
 button:hover{
-    background-color: brown;
+    background-color: rgb(181, 141, 112);
     color: white;
 }
