@@ -1,7 +1,47 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="tictactoe.js"></script>
     <title>Tic Tac Toe</title>
 </head>
-<body>
+<body onload="onld()">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <nav class="navbar bg-light" style="text-align: center">
+        <div class="mx-auto" style="width: 100%">
+            <div class="navbar-brand mb-0 h1" style="padding-left: 5px"><b>Tic-Tac-Toe</b></div>
+        </div>
+    </nav>
+    <div style="margin: auto;margin-top: 25px;text-align: center">
+        <div style="width: 125px;display: inline-block"><div id="p0">Player 1 - 0</div></div>
+        <div style="width: 125px;display: inline-block"><div id="p1">Player 2 - 0</div></div>
+    </div>
+    <div class="container" style="margin-top: 25px">
+        <table>
+            <tr>
+                <td id="1"></td>
+                <td id="2"></td>
+                <td id="3"></td>
+            </tr>
+            <tr>
+                <td id="4"></td>
+                <td id="5"></td>
+                <td id="6"></td>
+            </tr>
+            <tr>
+                <td id="7"></td>
+                <td id="8"></td>
+                <td id="9"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="k" style="text-align: center;margin: 25px"></div>
+    <div id="r" style="text-align: center;margin: 25px"></div>
 </body>
 </html>

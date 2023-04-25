@@ -1,0 +1,36 @@
+body{
+    font-family: "Poppins",sans-serif;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td{
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+td:hover{
+    cursor: hand;
+}
+
+.playing{
+    border-bottom: 2px solid brown;
+}
+
+button{
+    border-radius: 5px;
+    border: 2px solid brown;
+    background-color: transparent;
+    transition-duration: 0.1s;
+    cursor: hand;
+}
+
+button:hover{
+    background-color: brown;
+    color: white;
+}
