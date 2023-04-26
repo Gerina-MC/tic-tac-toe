@@ -20,10 +20,6 @@ td{
     border: 2px solid black;
 }
 
-td:hover{
-    cursor: hand;
-}
-
 .playing{
     border-bottom: 2px solid rgb(181, 141, 112);
 }
