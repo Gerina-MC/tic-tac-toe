@@ -1,4 +1,6 @@
-let sym="X";
+let sym="<i class='fa-solid fa-xmark fa-2xl' style='color:#2196f3'></i>";
+let c1=sym;
+let c2="<i class='fa-solid fa-o fa-2xl' style='color: red'></i>";
 let n=0;
 let splay=0;
 let play=splay;
@@ -15,10 +17,16 @@ function onld()
                 this.innerHTML=sym;
                 n++;
                 win();
-                if(sym === "X")
-                sym="O";
+                if(sym === c1)
+                {
+                    sym=c2;
+                    c1=this.innerHTML;
+                }
                 else
-                sym="X";
+                {
+                    sym=c1;
+                    c2=this.innerHTML;
+                }
             }
         }
     );
@@ -34,7 +42,7 @@ function win()
             wins[play]=wins[play]+1;
             document.getElementById("k").innerHTML="Player "+(play+1).toString()+" wins";
             document.getElementById("p"+play.toString()).innerHTML="Player "+(play+1).toString()+" - "+wins[play].toString();
-            if(sym === "X")
+            if(sym === "<i class='fa-solid fa-xmark' style='color:#2196f3'></i>")
             {
                 document.getElementById("r").innerHTML="<button onclick='res()'>New Game</button>";
             }
@@ -64,7 +72,7 @@ function win()
 }
 function res()
 {
-    sym = "X";
+    sym = c1;
     n = 0;
     document.getElementById("k").innerHTML="";
     document.getElementById("r").innerHTML="";
