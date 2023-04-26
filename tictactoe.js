@@ -43,6 +43,7 @@ function win()
                 document.getElementById("r").innerHTML="<button onclick='res()'>New Game</button>";
             }
             gameend=true;
+            break;
         }
         if(n==9 && !gameend)
         {
